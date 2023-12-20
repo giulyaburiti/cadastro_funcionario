@@ -9,7 +9,7 @@ Projeto de banco de dados da disciplina de Programação com Acesso a Banco de D
 
 2. Diagrama
    
-   ![Diagrama](images\diagrama.png)
+   ![Diagrama](/images/diagrama.png)
 
 ## 2. Modelo Lógico
 
