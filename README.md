@@ -9,14 +9,21 @@ Projeto de banco de dados da disciplina de Programação com Acesso a Banco de D
 
 2. Diagrama
    
-   ![Diagrama](/images/diagrama.png)
+   ![Diagrama](/images/diagrama.svg)
 
 ## 2. Modelo Lógico
 
+1. Transformação e Modelo Lógico Textual
 ```
 funcionario (id_funcionario, nome_funcionario, data_nascimento, sexo, endereco, email, telefone, admissao, demissao, salario).
 
-cargo (id_cargo, id_funcionario, cargo, descricao_cargo).
+cargo (id_cargo, id_funcionario, cargo, descricao_cargo)
+id_funcionario REFERENCES funcionario.
 
-setor (id_setor, id_funcionario, setor, descricao_setor).
+setor (id_setor, id_funcionario, setor, descricao_setor)
+id_funcionario REFERENCES funcionario.
 ```
+
+2. Detalhamento
+
+   Inicialmente foi feito a entidade "funcionario" com seus respectivos atributos, assim, houve o relacionamento com as entidades "cargo" e "setor" contendo seus atributos e tendo como chave estrangeira o "id_funcionario" sendo referenciado em cada tabela. Na ilustração do diagrama acima, é possível observar as seguintes cardinalidades entre cada relacionamento.
